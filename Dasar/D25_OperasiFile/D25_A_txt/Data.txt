@@ -1,0 +1,5 @@
+Nama	 : Rangga Wiraguna
+NIM 	 : 1803015106
+Jurusan	 : Teknik Informatika
+Angkatan : 2018
+IPK 	 : 3.42

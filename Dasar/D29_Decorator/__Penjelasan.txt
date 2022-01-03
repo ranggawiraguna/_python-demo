@@ -1,0 +1,45 @@
+Pengertian :
+Decorator adalah sebuah fungsi yang dapat mendekorasi ulang sebuah fungsi pada argumennya,
+artinya decorator meminta suatu fungsi untuk dilakukan suatu hal pada fungsi tersebut(didekorasi/ditambahkan),
+setelah selesai di dekorasi decorator akan mengembalikan fungsi tersebut dengan perubahan yang dilakukan(pembaharuan),
+sehingga fungsi yang di dekorasi pada decorator memiliki kelakuan yang berbeda, dengan perubahan yang dilakukan didalam decorator
+
+Algoritma Fungsi Decorator :
+[1]Buat FungsiInduk(Decorator) dengan paramater sebuah fungsi.
+[2]Deklarasikan sebuah fungsi dengan property decorator yang telah dibuat,
+   fungsi ini akan menjadi argumen pada Fungsi Decorator.
+[3]Pada saat pemanggilan fungsi dengan decorator, statement yang dijalankan adalah
+   statement yang ada didalam fungsi Decorator dan fungsi yang dipanggil akan otomatis akan menjadi argumen dari Fungsi Decorator
+
+========================================================================================================================================================================
+[>]Urutan pengeksekusian
+def fungsiDecorator(function):
+
+    Statement [1] Menjalankan perintah
+
+    #Bagian Fungsi ini dijalankan hanya untuk pendeklarasian saja, tetapi tidak di implementasikan langsung
+    def inner() : [2] Mendeklarisikan fungsi closure
+
+        Statement [5] Menjalankan perintah
+
+        return function() [6] Menjalankan suatu fungsi, dengan mengembalikan nilai yang diretuen pada fungsi tersebut
+
+    Statement [3] Menjalankan perintah
+
+    return inner [4] Mengembalikan fungsi inner(),
+                     pada statement ini mengembalikan artinya menjalankan semua yang ada pada fungsi inner dengan nilai variable yang telah dideklarasikan sebelumnya
+
+@fungsiDecorator
+def printer(): [6] Mendeklarasikan fungsi dengan properti decorator dari fungsiDecorator
+    print("Rangga", end=' ') [6.1] Menjalankan perintah
+    return "Wiraguna" [6.2] Mengembalikan sebuah nilai
+
+if __name__ == '__main__':
+    print(printer()) [0]Pemanggilan fungsi yang menggunakan properti Decorator
+========================================================================================================================================================================
+
+[!]Note :
+   Mengembalikan suatu fungsi tanpa nilai return(none), akan mengembalikan semua statement yang di print pada fungsi tersebut >> String
+
+
+

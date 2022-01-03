@@ -1,0 +1,11 @@
+[>]List Comprehension
+[>]Rekursi Function
+[>]Exception Handling (lengkapin)
+[>]Iterator
+[>]Generator
+[>]Closure
+[>]Decorator
+[>]Regular Expression
+[>]Numpy (lengkapin)
+[>]DateTime (lengkapin)
+[>]PyQt5 - QtDesigner

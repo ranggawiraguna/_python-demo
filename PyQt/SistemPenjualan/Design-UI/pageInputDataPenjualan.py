@@ -1,0 +1,115 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'pageInputDataPenjualan.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(500, 500)
+        MainWindow.setMinimumSize(QtCore.QSize(500, 500))
+        MainWindow.setMaximumSize(QtCore.QSize(500, 500))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../../TugasAkhir_Prolan/PageLogin/P_Icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        self.widget.setGeometry(QtCore.QRect(0, 0, 500, 500))
+        self.widget.setMinimumSize(QtCore.QSize(500, 500))
+        self.widget.setMaximumSize(QtCore.QSize(500, 500))
+        self.widget.setObjectName("widget")
+        self.Frame = QtWidgets.QLabel(self.widget)
+        self.Frame.setGeometry(QtCore.QRect(0, 0, 500, 500))
+        self.Frame.setText("")
+        self.Frame.setPixmap(QtGui.QPixmap("../mainApplication/Picture/FrameInputDataPenjualan.jpg"))
+        self.Frame.setScaledContents(True)
+        self.Frame.setObjectName("Frame")
+        self.inputKode = QtWidgets.QLineEdit(self.widget)
+        self.inputKode.setGeometry(QtCore.QRect(56, 140, 384, 26))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.inputKode.setFont(font)
+        self.inputKode.setMaxLength(10)
+        self.inputKode.setFrame(False)
+        self.inputKode.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.inputKode.setObjectName("inputKode")
+        self.inputNama = QtWidgets.QLineEdit(self.widget)
+        self.inputNama.setGeometry(QtCore.QRect(56, 206, 384, 26))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.inputNama.setFont(font)
+        self.inputNama.setMaxLength(50)
+        self.inputNama.setFrame(False)
+        self.inputNama.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.inputNama.setObjectName("inputNama")
+        self.inputJumlah = QtWidgets.QLineEdit(self.widget)
+        self.inputJumlah.setGeometry(QtCore.QRect(56, 272, 384, 26))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.inputJumlah.setFont(font)
+        self.inputJumlah.setMaxLength(50)
+        self.inputJumlah.setFrame(False)
+        self.inputJumlah.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.inputJumlah.setObjectName("inputJumlah")
+        self.inputKeterangan = QtWidgets.QLineEdit(self.widget)
+        self.inputKeterangan.setGeometry(QtCore.QRect(56, 339, 384, 26))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.inputKeterangan.setFont(font)
+        self.inputKeterangan.setMaxLength(50)
+        self.inputKeterangan.setFrame(False)
+        self.inputKeterangan.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.inputKeterangan.setObjectName("inputKeterangan")
+        self.buttonInput = QtWidgets.QToolButton(self.widget)
+        self.buttonInput.setGeometry(QtCore.QRect(209, 387, 84, 34))
+        self.buttonInput.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.buttonInput.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("../mainApplication/Picture/buttonInput.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.buttonInput.setIcon(icon1)
+        self.buttonInput.setIconSize(QtCore.QSize(80, 30))
+        self.buttonInput.setAutoRaise(True)
+        self.buttonInput.setObjectName("buttonInput")
+        self.buttonBack = QtWidgets.QToolButton(self.widget)
+        self.buttonBack.setGeometry(QtCore.QRect(37, 50, 31, 31))
+        self.buttonBack.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("../mainApplication/Picture/iconPrevious .png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.buttonBack.setIcon(icon2)
+        self.buttonBack.setIconSize(QtCore.QSize(100, 30))
+        self.buttonBack.setAutoRaise(True)
+        self.buttonBack.setObjectName("buttonBack")
+        self.infoInput = QtWidgets.QLabel(self.widget)
+        self.infoInput.setGeometry(QtCore.QRect(56, 430, 382, 27))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.infoInput.setFont(font)
+        self.infoInput.setText("")
+        self.infoInput.setAlignment(QtCore.Qt.AlignCenter)
+        self.infoInput.setObjectName("infoInput")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "APLIKASI COBAAN"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

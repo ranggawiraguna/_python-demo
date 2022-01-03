@@ -1,0 +1,9 @@
+Langkah-langkah penggunaan regularExpression di Python adalah sebagai berikut.
+[1]Import modul regulaeExpression yaitu dengan perintah "import re"
+[2]Buat objekRegex menggunakan methode re.compile() dengan menggunak raw string 'r' >> re.compile(r'polaSearching')
+[3]Masukkan String ke methode search() yang dimiliki oleh objekRegex, akan menghasilkan objekMatch >> objekMatch = objekRegex.search('teks')
+[4]Panggil method grop() yang dimiliki oleh objekMatch untuk mendapatkan teks yang sesuai
+
+ket : Perintah objekRegex.search('teks') akan me-return karakter String yang ditemukan jika sesuai pola pada re.compile(r'polaSearching'),
+      jika pola tidak terdapat pada text yang dicari, maka fungsi objekRegex.search('teks') akan me-return None.
+      Nilai yang di return tersebut dapat dipanggil melalui objeckMatch.group()

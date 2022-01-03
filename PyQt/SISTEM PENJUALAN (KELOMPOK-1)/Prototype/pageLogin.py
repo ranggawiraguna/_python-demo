@@ -1,0 +1,47 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+def pageLogin(self):
+    self.pageLogin = dict()
+    self.pageLogin["widget"] = QtWidgets.QWidget(self.centralwidget)
+    self.pageLogin["widget"].setGeometry(QtCore.QRect(0, 0, 500, 500))
+    self.pageLogin["widget"].setMinimumSize(QtCore.QSize(500, 500))
+    self.pageLogin["widget"].setMaximumSize(QtCore.QSize(500, 500))
+
+    self.pageLogin["Frame"] = QtWidgets.QLabel(self.pageLogin["widget"])
+    self.pageLogin["Frame"].setGeometry(QtCore.QRect(0, 0, 500, 500))
+    self.pageLogin["Frame"].setMinimumSize(QtCore.QSize(500, 500))
+    self.pageLogin["Frame"].setMaximumSize(QtCore.QSize(500, 500))
+    self.pageLogin["Frame"].setText("")
+    self.pageLogin["Frame"].setPixmap(QtGui.QPixmap("Picture/FrameLogin.jpg"))
+    self.pageLogin["Frame"].setScaledContents(True)
+
+    self.pageLogin["inputKey"] = QtWidgets.QLineEdit(self.pageLogin["widget"])
+    self.pageLogin["inputKey"].setGeometry(QtCore.QRect(153, 211, 192, 24))
+    self.pageLogin["inputKey"].setMinimumSize(QtCore.QSize(192, 24))
+    self.pageLogin["inputKey"].setMaximumSize(QtCore.QSize(192, 24))
+    font = QtGui.QFont()
+    font.setPointSize(10)
+    self.pageLogin["inputKey"].setFont(font)
+    self.pageLogin["inputKey"].setMaxLength(15)
+    self.pageLogin["inputKey"].setFrame(False)
+    self.pageLogin["inputKey"].setEchoMode(QtWidgets.QLineEdit.Password)
+    self.pageLogin["inputKey"].setAlignment(QtCore.Qt.AlignCenter)
+
+    self.pageLogin["buttonLogin"] = QtWidgets.QToolButton(self.pageLogin["widget"])
+    self.pageLogin["buttonLogin"].setGeometry(QtCore.QRect(217, 253, 69, 28))
+    self.pageLogin["buttonLogin"].setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+    self.pageLogin["buttonLogin"].setText("")
+    icon1 = QtGui.QIcon()
+    icon1.addPixmap(QtGui.QPixmap("Picture/buttonLogin.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+    self.pageLogin["buttonLogin"].setIcon(icon1)
+    self.pageLogin["buttonLogin"].setIconSize(QtCore.QSize(66, 26))
+    self.pageLogin["buttonLogin"].setAutoRaise(True)
+
+    self.pageLogin["notice"] = QtWidgets.QLabel(self.pageLogin["widget"])
+    self.pageLogin["notice"].setGeometry(QtCore.QRect(156, 300, 185, 81))
+    self.pageLogin["notice"].setMinimumSize(QtCore.QSize(185, 81))
+    self.pageLogin["notice"].setMaximumSize(QtCore.QSize(185, 81))
+    self.pageLogin["notice"].setText("")
+    self.pageLogin["notice"].setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop)
+    self.pageLogin["notice"].setObjectName("notice")
+

@@ -1,0 +1,8 @@
+INSERT INTO data_penjualan VALUES
+("BJJ0921", "Bajaj", 10, "Baru"),
+("MTR3921", "Astrea", 20, "Baru(10), Bekas(5)"),
+("MTR3722", "Supra", 12, "Baru(10), Bekas(2)"),
+("MTR1215", "Vespa", 5, "Baru(3), Bekas(2)"),
+("MBL3213", "Avanza", 10, "Baru"),
+("MBL4251", "Kijang", 10, "Baru(6), Bekas(4)"),
+("MBL4412", "Honda Jazz", 5, "Baru");
